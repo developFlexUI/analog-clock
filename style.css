@@ -1,0 +1,204 @@
+* {
+	margin: auto;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-weight: 300;
+}
+h1,
+h2 {
+	font-size: 1em;
+}
+hr {
+	border: 2px dashed #fff;
+	border-style: none none dashed;
+	color: #fff;
+	background-color: black;
+}
+.container {
+	display: flex;
+	background-color: #ff9800;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.wing {
+	position: absolute;
+	align-self: center;
+	width: 600px;
+	height: 200px;
+	border-radius: 20px;
+	background-color: rgb(10, 70, 99);
+	box-shadow: inset 0px 1px 20px 0 #131b27;
+	z-index: 0;
+	transform: rotate(90deg);
+}
+.lineabove {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: 10%;
+	background-color: rgba(255, 0, 0, 0);
+}
+.linedown {
+	width: 100%;
+	position: absolute;
+	top: 90%;
+}
+.clock {
+	background-color: #fff;
+	width: 300px;
+	height: 300px;
+	border: 20px solid rgb(95, 93, 90);
+	box-shadow: 1px 1px 19px 0px black;
+	border-radius: 50%;
+	z-index: 1;
+}
+.buttonn {
+	position: relative;
+	width: 20px;
+	height: 40px;
+	top: 42%;
+	left: 13%;
+	align-self: center;
+	background-color: rgb(37, 37, 37);
+	border-radius: 0 10px 10px 0;
+	float: right;
+	z-index: 1;
+}
+.dateholder {
+	position: relative;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+	top: 75%;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	box-shadow: inset 0 0 2px rgb(66, 66, 66);
+	text-align: center;
+	align-items: center;
+	justify-self: center;
+}
+.dateholder h2 {
+	position: relative;
+	top: 16%;
+}
+.all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: auto;
+	left: auto;
+	height: 300px;
+	width: 300px;
+	z-index: 1;
+}
+.above {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	box-shadow: 0 0 20px 0px rgb(66, 66, 66);
+	background-color: white;
+	z-index: 190;
+}
+.above h1 {
+	position: relative;
+	top: 9%;
+}
+/* every line */
+.twelve_six {
+	transform: rotate(90deg);
+}
+
+.twelve_six,
+.one_seven,
+.two_eight,
+.three_nine,
+.four_ten,
+.five_eleven {
+	position: absolute;
+	display: inline-block;
+	align-items: center;
+	width: 10px;
+	height: 280px;
+	border-radius: 5px;
+	transform-origin: center center;
+}
+/* transforming and displaying lines */
+.twelve_six {
+	transform: rotate(0deg);
+	z-index: 2;
+	background-color: #ff9800;
+}
+.one_seven {
+	background-color: #131b27;
+	transform: rotate(30deg);
+	width: 2px;
+}
+.two_eight {
+	transform: rotate(60deg);
+	background-color: #131b27;
+	width: 2px;
+}
+.three_nine {
+	background-color: #131b27;
+	transform: rotate(90deg);
+}
+.four_ten {
+	background-color: #131b27;
+	transform: rotate(120deg);
+	width: 2px;
+}
+.five_eleven {
+	background-color: #131b27;
+	transform: rotate(150deg);
+	width: 2px;
+}
+/* Parts for needle */
+.dot {
+	display: inline-block;
+	align-self: center;
+	justify-self: center;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	z-index: 2008;
+	border: 2px solid black;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.shorter {
+	display: inline-block;
+	position: absolute;
+	z-index: 2000;
+	height: 90px;
+	width: 10px;
+	border-radius: 20px 20px 0 0;
+	top: 26%;
+	background-color: black;
+	transform-origin: center 80%;
+}
+.short {
+	display: inline-block;
+	position: absolute;
+	top: 21%;
+	height: 108px;
+	width: 4px;
+	z-index: 2001;
+	border-radius: 10px 10px 0 0;
+	background-color: rgb(235, 83, 13);
+	transform-origin: center 80%;
+}
+.long{
+    display: inline-block;
+    position: absolute;
+    background-color: #09165e;
+    height: 120px;
+    width: 3px;
+    border-radius: 20%;
+    top: 15%;
+    z-index: 2002;
+    transform-origin: center 87%;
+}
